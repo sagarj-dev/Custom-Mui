@@ -1,0 +1,32 @@
+.Header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vh;
+  padding: 0 1rem;
+
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: flex-start;
+    width: 8%;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .input {
+    width: 20%;
+  }
+
+  border-bottom: 2px solid var(--light-grey);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}

@@ -1,0 +1,27 @@
+.UserSection1 {
+  width: 20vw;
+  padding: 1rem 0;
+  //   background-color: red;
+  display: flex;
+  flex-direction: column;
+  //   justify-content: space-between;
+  align-items: center;
+
+  .topMenu {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .userDetails {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    h6 {
+      margin: 0.5rem 0;
+    }
+  }
+}

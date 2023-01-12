@@ -1,0 +1,23 @@
+.Sidebar1 {
+  display: flex;
+  flex-direction: column;
+  width: 4vw;
+  height: 100%;
+  border-right: 2px solid var(--light-grey);
+  justify-content: space-between;
+  align-items: center;
+  .sidebar1-users,
+  .sidebar1-menu {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .sidebar1-menu {
+    margin-top: 1rem;
+  }
+  .sidebar1-users {
+    margin-bottom: 1rem;
+  }
+}

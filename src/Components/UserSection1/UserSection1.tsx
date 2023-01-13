@@ -6,6 +6,7 @@ import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import AvatarLarge from "../AvatarLarge/AvatarLarge";
 import { Typography } from "@mui/material";
 import ListMenu from "../ListMenu/ListMenu";
+import ContactIconList from "../ContactIconList/ContactIconList";
 const UserSection1 = () => {
   return (
     <div className="UserSection1">
@@ -24,6 +25,7 @@ const UserSection1 = () => {
           <Typography variant="subtitle2">adrian.nader@yahoo.com</Typography>
         </div>
         <ListMenu />
+        <ContactIconList />
       </div>
     </div>
   );

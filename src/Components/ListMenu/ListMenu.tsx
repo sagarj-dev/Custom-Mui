@@ -1,27 +1,33 @@
-import { Person } from "@mui/icons-material";
+import ViewComfyIcon from "@mui/icons-material/ViewComfy";
+import PlaylistAddCheckIcon from "@mui/icons-material/PlaylistAddCheck";
+import CloudIcon from "@mui/icons-material/Cloud";
+import EmailIcon from "@mui/icons-material/Email";
+import GroupIcon from "@mui/icons-material/Group";
+import EventIcon from "@mui/icons-material/Event";
+import BuildIcon from "@mui/icons-material/Build";
 import {
   List,
   ListItem,
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Typography,
 } from "@mui/material";
 import { styled } from "@mui/system";
-import React from "react";
 import "./ListMenu.scss";
 
 const StyledList = styled(List)(({ theme }) => ({
   "&.MuiList-root": {
-    border: `2px solid ${theme.palette.action.disabled}`,
+    border: `2px solid #edeff2`,
     borderRadius: "20px",
 
     "&& .MuiListItem-root": {
       "&:nth-child(odd)": {
-        borderRight: `2px solid ${theme.palette.action.disabled}`,
-        borderBottom: `2px solid ${theme.palette.action.disabled}`,
+        borderRight: `2px solid #edeff2`,
+        borderBottom: `2px solid #edeff2`,
       },
       "&:nth-child(even)": {
-        borderBottom: `2px solid ${theme.palette.action.disabled}`,
+        borderBottom: `2px solid #edeff2`,
       },
       "&:nth-last-child(2)": {
         borderBottom: "none",
@@ -39,13 +45,25 @@ const StyledList = styled(List)(({ theme }) => ({
   },
 
   "& .MuiListItemButton-root": {
+    transition: "all 0.3s ease",
     display: "flex",
     flexDirection: "column",
     color: theme.palette.action.disabled,
-
+    "&:hover": {
+      transform: "scale(1.2)",
+      backgroundColor: "white",
+      borderRadius: 7,
+    },
+    "&:hover .MuiListItemIcon-root": {
+      color: theme.palette.primary.main,
+    },
+    "&:hover .MuiTypography-root": {
+      color: theme.palette.primary.main,
+    },
     "& .MuiListItemIcon-root": {
       display: "grid",
       placeItems: "center",
+      margin: "1rem 0.7rem 0.5rem 0.7rem",
       color: theme.palette.action.disabled,
     },
   },
@@ -67,97 +85,81 @@ const ListMenu = () => {
         <ListItem>
           <ListItemButton>
             <ListItemIcon>
-              <Person />
+              <ViewComfyIcon />
             </ListItemIcon>
-            <ListItemText>Notes</ListItemText>
+            <ListItemText>
+              <Typography variant="subtitle2">Dashboard</Typography>
+            </ListItemText>
           </ListItemButton>
         </ListItem>
         <ListItem>
           <ListItemButton>
             <ListItemIcon>
-              <Person />
+              <PlaylistAddCheckIcon />
             </ListItemIcon>
-            <ListItemText>Notes</ListItemText>
+            <ListItemText>
+              <Typography variant="subtitle2">Notes</Typography>
+            </ListItemText>
           </ListItemButton>
         </ListItem>
         <ListItem>
           <ListItemButton>
             <ListItemIcon>
-              <Person />
+              <PlaylistAddCheckIcon />
             </ListItemIcon>
-            <ListItemText>Notes</ListItemText>
+            <ListItemText>
+              <Typography variant="subtitle2">Tasks</Typography>
+            </ListItemText>
           </ListItemButton>
         </ListItem>
         <ListItem>
           <ListItemButton>
             <ListItemIcon>
-              <Person />
+              <CloudIcon />
             </ListItemIcon>
-            <ListItemText>Notes</ListItemText>
+            <ListItemText>
+              <Typography variant="subtitle2">Files</Typography>
+            </ListItemText>
           </ListItemButton>
         </ListItem>
         <ListItem>
           <ListItemButton>
             <ListItemIcon>
-              <Person />
+              <EmailIcon />
             </ListItemIcon>
-            <ListItemText>Notes</ListItemText>
+            <ListItemText>
+              <Typography variant="subtitle2">Emails</Typography>
+            </ListItemText>
           </ListItemButton>
         </ListItem>
         <ListItem>
           <ListItemButton>
             <ListItemIcon>
-              <Person />
+              <GroupIcon />
             </ListItemIcon>
-            <ListItemText>Notes</ListItemText>
+            <ListItemText>
+              <Typography variant="subtitle2">Clients</Typography>
+            </ListItemText>
           </ListItemButton>
         </ListItem>
         <ListItem>
           <ListItemButton>
             <ListItemIcon>
-              <Person />
+              <EventIcon />
             </ListItemIcon>
-            <ListItemText>Notes</ListItemText>
+            <ListItemText>
+              <Typography variant="subtitle2">Calender</Typography>
+            </ListItemText>
           </ListItemButton>
         </ListItem>
         <ListItem>
           <ListItemButton>
             <ListItemIcon>
-              <Person />
+              <BuildIcon />
             </ListItemIcon>
-            <ListItemText>Notes</ListItemText>
-          </ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>
-            <ListItemIcon>
-              <Person />
-            </ListItemIcon>
-            <ListItemText>Notes</ListItemText>
-          </ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>
-            <ListItemIcon>
-              <Person />
-            </ListItemIcon>
-            <ListItemText>Notes</ListItemText>
-          </ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>
-            <ListItemIcon>
-              <Person />
-            </ListItemIcon>
-            <ListItemText>Notes</ListItemText>
-          </ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>
-            <ListItemIcon>
-              <Person />
-            </ListItemIcon>
-            <ListItemText>Notes</ListItemText>
+            <ListItemText>
+              <Typography variant="subtitle2">Settings</Typography>
+            </ListItemText>
           </ListItemButton>
         </ListItem>
       </StyledList>

@@ -1,10 +1,10 @@
 .UserSection1 {
-  width: 20vw;
+  min-width: 20vw;
   padding: 1rem 0;
-  //   background-color: red;
+
   display: flex;
   flex-direction: column;
-  //   justify-content: space-between;
+
   align-items: center;
 
   .topMenu {

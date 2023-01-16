@@ -1,33 +1,41 @@
 import React from "react";
-import Header1 from "../../Components/Header1/Header1";
+import Header1 from "../../Components/Header1/Header";
 import "./Page2.scss";
-import Sidebar1 from "../../Components/Sidebar1/Sidebar1";
-import UserSection1 from "../../Components/UserSection1/UserSection1";
+import Sidebar1 from "../../Components/Sidebar1/Sidebar";
+import UserSection from "../../Components/UserSection1/UserSection";
 import StyledTabs from "../../Components/StyledTabs/StyledTabs";
 
 import MyAccord from "../../Components/MyAccord/MyAccord";
 import MyTable from "../../Components/MyTable/MyTable";
+import { Box } from "@mui/material";
 const Page2 = () => {
   return (
     <div className="Page2">
-      <Header1 />
+      <Header1 variant={1} />
       <main>
         <Sidebar1 />
-        <UserSection1 />
+        <UserSection variant={1} />
         <div className="main">
           <StyledTabs>
-            <MyAccord>
-              <MyTable />
-            </MyAccord>
-            <MyAccord>
-              <MyTable />
-            </MyAccord>
-            <MyAccord>
-              <MyTable />
-            </MyAccord>
-            <MyAccord>
-              <MyTable />
-            </MyAccord>
+            <Box
+              sx={{
+                pr: 4,
+                pl: 5,
+              }}
+            >
+              <MyAccord>
+                <MyTable />
+              </MyAccord>
+              <MyAccord>
+                <MyTable />
+              </MyAccord>
+              <MyAccord>
+                <MyTable />
+              </MyAccord>
+              <MyAccord>
+                <MyTable />
+              </MyAccord>
+            </Box>
           </StyledTabs>
         </div>
       </main>

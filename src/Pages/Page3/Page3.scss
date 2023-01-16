@@ -1,0 +1,15 @@
+.Page3 {
+  width: 100%;
+  main {
+    display: flex;
+    height: calc(93vh - 2px);
+  }
+  .main {
+    margin: 2rem 0;
+  }
+  .category-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+}

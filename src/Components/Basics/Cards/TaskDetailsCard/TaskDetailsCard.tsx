@@ -39,7 +39,9 @@ const TaskDetailsCard = ({
           border: pendingDays && pendingDays <= 1 ? "2px solid" : "none",
           borderColor: "error.main",
           mt: 2,
+          boxShadow: "0px 3px 13px -12px rgb(0 0 0 / 75%)",
         }}
+        elevation={0}
       >
         {mainImage && (
           <CardMedia

@@ -77,7 +77,7 @@ const StyledTabs = ({ children }: StyledTabsType) => {
         </StyledTabsPanel>
         <InputWithIcons startIcon={Search} placeholder="Search Tasks" />
       </Box>
-      <Box sx={{ pr: 4, pl: 5, mb: 2, mt: 3 }}>{children}</Box>
+      <Box sx={{ mb: 2, mt: 3 }}>{children}</Box>
     </Box>
   );
 };

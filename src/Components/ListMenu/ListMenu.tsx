@@ -15,6 +15,7 @@ import {
 } from "@mui/material";
 import { styled } from "@mui/system";
 import "./ListMenu.scss";
+import { Link } from "react-router-dom";
 
 const StyledList = styled(List)(({ theme }) => ({
   "&.MuiList-root": {
@@ -82,7 +83,7 @@ const ListMenu = () => {
           gridTemplateColumns: "1fr 1fr",
         }}
       >
-        <ListItem>
+        <ListItem component={Link} to="/">
           <ListItemButton>
             <ListItemIcon>
               <ViewComfyIcon />
@@ -92,7 +93,7 @@ const ListMenu = () => {
             </ListItemText>
           </ListItemButton>
         </ListItem>
-        <ListItem>
+        <ListItem component={Link} to="/2">
           <ListItemButton>
             <ListItemIcon>
               <PlaylistAddCheckIcon />
@@ -102,7 +103,7 @@ const ListMenu = () => {
             </ListItemText>
           </ListItemButton>
         </ListItem>
-        <ListItem>
+        <ListItem component={Link} to="/3">
           <ListItemButton>
             <ListItemIcon>
               <PlaylistAddCheckIcon />
@@ -112,7 +113,7 @@ const ListMenu = () => {
             </ListItemText>
           </ListItemButton>
         </ListItem>
-        <ListItem>
+        <ListItem component={Link} to="/4">
           <ListItemButton>
             <ListItemIcon>
               <CloudIcon />
@@ -122,7 +123,7 @@ const ListMenu = () => {
             </ListItemText>
           </ListItemButton>
         </ListItem>
-        <ListItem>
+        <ListItem component={Link} to="/5">
           <ListItemButton>
             <ListItemIcon>
               <EmailIcon />
@@ -132,7 +133,7 @@ const ListMenu = () => {
             </ListItemText>
           </ListItemButton>
         </ListItem>
-        <ListItem>
+        <ListItem component={Link} to="/6">
           <ListItemButton>
             <ListItemIcon>
               <GroupIcon />
@@ -142,7 +143,7 @@ const ListMenu = () => {
             </ListItemText>
           </ListItemButton>
         </ListItem>
-        <ListItem>
+        <ListItem component={Link} to="/7">
           <ListItemButton>
             <ListItemIcon>
               <EventIcon />

@@ -1,5 +1,5 @@
 import React from "react";
-import "./InputWithIcons.scss";
+
 import { MusicVideo } from "@mui/icons-material";
 import { Box, InputBase } from "@mui/material";
 
@@ -7,12 +7,14 @@ type InputWithIconsType = {
   startIcon?: typeof MusicVideo;
   endIcon?: typeof MusicVideo;
   placeholder: string;
+  disableShadow?: boolean;
 };
 
 const InputWithIcons = ({
   startIcon: StartIcon,
   placeholder,
   endIcon: EndIcon,
+  disableShadow,
 }: InputWithIconsType) => {
   return (
     <Box
@@ -22,7 +24,7 @@ const InputWithIcons = ({
         placeItems: "center",
         borderRadius: "50px",
         gap: 1,
-        boxShadow: "0px 3px 13px -12px rgb(0 0 0 / 75%)",
+        boxShadow: disableShadow ? "" : "0px 3px 13px -12px rgb(0 0 0 / 75%)",
         px: 2,
         py: 1,
       }}

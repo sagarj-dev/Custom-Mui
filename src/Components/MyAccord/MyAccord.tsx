@@ -10,7 +10,7 @@ import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import { Box } from "@mui/system";
 import { CloudCircle, Flag } from "@mui/icons-material";
 const StyledAccordian = styled(Accordion)(({ theme }) => ({
-  boxShadow: "0px 3px 13px -12px rgb(0 0 0 / 75%)",
+  boxShadow: "0px 3px 10px -12px rgb(0 0 0 / 75%)",
 
   "& .MuiAccordionSummary-root": {
     flexDirection: "row-reverse",

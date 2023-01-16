@@ -2,7 +2,6 @@ import { MusicVideo } from "@mui/icons-material";
 import { Avatar, Badge } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import "./CircleIconButton.scss";
 
 type CircleIconButtonType = {
   icon?: typeof MusicVideo;

@@ -1,0 +1,16 @@
+.Page4 {
+  width: 100%;
+  main {
+    display: flex;
+    height: calc(93vh - 2px);
+  }
+  .main {
+    margin: 2rem 0;
+    flex-grow: 1;
+  }
+  .category-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+}

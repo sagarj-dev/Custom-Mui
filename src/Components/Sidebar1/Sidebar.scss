@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 4vw;
   height: 100%;
+
   border-right: 2px solid var(--light-grey);
   justify-content: space-between;
   align-items: center;
@@ -20,4 +21,8 @@
   .sidebar1-users {
     margin-bottom: 1rem;
   }
+}
+
+.Sidebar2 {
+  border-right: none;
 }

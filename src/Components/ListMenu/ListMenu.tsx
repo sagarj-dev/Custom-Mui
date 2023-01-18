@@ -14,7 +14,6 @@ import {
   Typography,
 } from "@mui/material";
 import { styled } from "@mui/system";
-import "./ListMenu.scss";
 import { Link } from "react-router-dom";
 
 const StyledList = styled(List)(({ theme }) => ({

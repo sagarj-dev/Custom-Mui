@@ -1,16 +1,16 @@
 import React from "react";
 import Header1 from "../../Components/Header1/Header";
-import "./Page4.scss";
+import "./Page5.scss";
 import Sidebar1 from "../../Components/Sidebar1/Sidebar";
 import UserSection from "../../Components/UserSection1/UserSection";
-
 import StyledPaper from "../../Components/Basics/StyledPaper";
 import { Box } from "@mui/system";
-import ChatList from "./ChatList";
-import ChatScreen from "./ChatScreen";
-const Page4 = () => {
+import Page5Sidebar from "./Page5Sidebar";
+import Page5Main from "./Page5Main";
+
+const Page5 = () => {
   return (
-    <div className="Page4">
+    <div className="Page5">
       <Header1 variant={2} />
       <main>
         <UserSection variant={2} />
@@ -34,10 +34,10 @@ const Page4 = () => {
                   mr: 2,
                 }}
               >
-                <ChatList />
+                <Page5Sidebar />
               </Box>
               <Box>
-                <ChatScreen />
+                <Page5Main />
               </Box>
             </Box>
           </StyledPaper>
@@ -48,4 +48,4 @@ const Page4 = () => {
   );
 };
 
-export default Page4;
+export default Page5;

@@ -36,9 +36,9 @@ const Sidebar = ({ variant = 1 }: SidebarType) => {
           img="https://xsgames.co/randomusers/avatar.php?g=female"
           badgeColor="primary"
         />
-        <CircleIconButton img="https://xsgames.co/randomusers/avatar.php?g=male" />
-        <CircleIconButton img="https://xsgames.co/randomusers/avatar.php?g=male" />
-        <CircleIconButton img="https://xsgames.co/randomusers/avatar.php?g=male" />
+        <CircleIconButton img="https://xsgames.co/randomusers/assets/avatars/male/10.jpg" />
+        <CircleIconButton img="https://xsgames.co/randomusers/assets/avatars/female/11.jpg" />
+        <CircleIconButton img="https://xsgames.co/randomusers/assets/avatars/male/12.jpg" />
         {variant === 1 && <CircleIconButton icon={AddCircleRoundedIcon} />}
       </div>
 

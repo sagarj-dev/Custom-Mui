@@ -1,4 +1,4 @@
-import { Search } from "@mui/icons-material";
+import { Call, Message, People, Search, Settings } from "@mui/icons-material";
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import InputWithIcons from "../../Components/Basics/InputWithIcons";
@@ -166,7 +166,14 @@ const data: ChatListElmProps[] = [
 
 const ChatList = () => {
   return (
-    <Box>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        height: "100%",
+      }}
+    >
       <Box
         sx={{
           borderBottom: "1px solid var(--light-grey);",
@@ -188,6 +195,20 @@ const ChatList = () => {
           name={d.name}
         />
       ))}
+
+      <Box
+        sx={{
+          justifySelf: "flex-end",
+          display: "flex",
+          justifyContent: "space-evenly",
+          py: 1,
+        }}
+      >
+        <People color="disabled" />
+        <Message color="primary" />
+        <Call color="disabled" />
+        <Settings color="disabled" />
+      </Box>
     </Box>
   );
 };

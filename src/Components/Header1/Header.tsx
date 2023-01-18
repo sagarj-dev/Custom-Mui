@@ -12,6 +12,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import CancelIcon from "@mui/icons-material/Cancel";
 import { Box } from "@mui/system";
 import { Face, LocationOn } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 type HeaderType = {
   variant: 1 | 2;
@@ -22,7 +23,16 @@ const Header = ({ variant }: HeaderType) => {
     <div className="Header1">
       <div className="left">
         <CircleIconButton icon={MenuIcon} />
-        <Typography variant="h1">Constructor</Typography>
+        <Typography
+          variant="h1"
+          component={Link}
+          to="/"
+          sx={{
+            textDecoration: "none",
+          }}
+        >
+          Constructor
+        </Typography>
       </div>
       <div className="navbar">
         <Typography variant="subtitle1">Dashboard</Typography>
